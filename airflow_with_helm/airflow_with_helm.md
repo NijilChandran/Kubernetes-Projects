@@ -20,10 +20,10 @@ helm install airflow apache-airflow/airflow --version 1.7.0 -n airflow \
 --timeout 10m0s
 
 
-## updatng current helm release without upgrading to the latest Helm chart version
+### updatng current helm release without upgrading to the latest Helm chart version
 
 + update the values.yaml
 helm status <release-name>
 helm upgrade --reuse-values <release-name> <chart-name>
 
-# The --reuse-values flag tells Helm to reuse the existing values that are already set in the release and only update the values that have changed in the updated values.yaml file.
++ The --reuse-values flag tells Helm to reuse the existing values that are already set in the release and only update the values that have changed in the updated values.yaml file.
